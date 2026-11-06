@@ -2,138 +2,92 @@
 <html lang="es" class="dark">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chicas El Salvador | Eróticos y Profesionales</title>
-    <!-- Favicon inline para evitar error 404 -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+    <title>Chicas El Salvador - Clasificados Profesionales</title>
+    <!-- Favicon inline SVG -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome para iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
     <script>
         tailwind.config = {
             darkMode: 'class',
             theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#fdf2f8',
-                            100: '#fce7f3',
-                            500: '#ec4899',
-                            600: '#db2777',
-                            700: '#be185d',
-                            900: '#831843',
-                            950: '#500724',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
+                extend: {}
             }
-        }
+        };
     </script>
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        /* Custom scrollbars */
-        ::-webkit-scrollbar { width: 6px; height: 6px; }
-        ::-webkit-scrollbar-track { background: #0f172a; }
-        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #ec4899; }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #0f172a; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-brand-500 selection:text-white">
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col">
 
-    <!-- Header / Navbar -->
-    <header class="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-gray-800 shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                
-                <!-- Logo -->
-                <div class="flex items-center gap-3">
-                    <a href="#" class="flex items-center gap-2 group">
-                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-pink-500 flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-brand-600/30 group-hover:scale-105 transition-transform">
-                            W
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-xl font-extrabold tracking-tight text-white flex items-center gap-1">
-                                Chicas El Salvador <span class="text-xs bg-brand-600 text-white font-semibold px-1.5 py-0.5 rounded">SV</span>
-                            </span>
-                            <span class="text-[10px] text-gray-400 font-medium tracking-wide">EL SALVADOR • CONTACTOS</span>
-                        </div>
-                    </a>
+    <!-- Header Navigation -->
+    <header class="bg-slate-800/80 backdrop-blur border-b border-slate-700 sticky top-0 z-30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-gradient-to-tr from-pink-500 to-purple-600 text-white p-2 rounded-xl shadow-lg">
+                    <i class="fa-solid fa-heart text-xl"></i>
                 </div>
-
-                <!-- Action Button -->
-                <!-- <div class="flex items-center gap-3">-->
-                    <!-- <button onclick="showPublishAlert()" class="bg-gradient-to-r from-brand-600 to-pink-600 hover:from-brand-500 hover:to-pink-500 text-white px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold flex items-center gap-2 transition shadow-md shadow-brand-600/20 active:scale-95">-->
-                        <!-- <i class="fa-solid fa-plus-circle text-base"></i>-->
-                        <!-- <span class="hidden sm:inline">Publicar Anuncio</span>-->
-                    <!-- </button>-->
-                <!-- </div>-->
+                <div>
+                    <h1 class="text-xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                        Chicas El Salvador
+                    </h1>
+                    <p class="text-[10px] text-gray-400 font-medium">Anuncios Verificados & Clasificados</p>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    En línea
+                </span>
             </div>
         </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+    <!-- Main Container -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
 
-        <!-- Hero & Filter Header -->
-        <div class="bg-gradient-to-r from-slate-900 via-slate-900 to-brand-950/40 p-5 sm:p-6 rounded-2xl border border-gray-800 shadow-xl">
-            <div class="max-w-3xl space-y-2">
-                <div class="inline-flex items-center gap-1.5 bg-brand-950/80 border border-brand-700/50 text-brand-400 text-xs px-3 py-1 rounded-full font-medium">
-                    <i class="fa-solid fa-fire text-brand-500"></i> Contactos Eróticos & Profesionales
+        <!-- Search & Filter Bar -->
+        <div class="bg-slate-800 p-4 rounded-2xl border border-slate-700/80 mb-6 shadow-md">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                <div class="relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                    <input type="text" id="searchInput" placeholder="Buscar por nombre o palabra clave..." 
+                           class="w-full bg-slate-950 border border-slate-700 rounded-xl pl-9 pr-4 py-2 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-pink-500 transition">
                 </div>
-                <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-                    Anuncios de Escorts y Masajes en El Salvador
-                </h1>
-                <p class="text-xs sm:text-sm text-gray-400">
-                    Encuentra chicas VIP, masajistas y acompañantes independientes. Explora opiniones reales registradas por la comunidad.
-                </p>
-            </div>
-
-            <!-- Filters Bar -->
-            <div class="mt-6 grid grid-cols-1 sm:grid-cols-12 gap-3 pt-4 border-t border-gray-800/80">
-                <!-- Search Input -->
-                <div class="sm:col-span-7 relative">
-                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-500 text-sm"></i>
-                    <input type="text" id="searchInput" oninput="renderAdsList()" placeholder="Buscar por palabra clave (ej: Colombiana, Escalón, Masaje)..." 
-                           class="w-full bg-slate-950 border border-gray-700 text-white text-xs sm:text-sm rounded-xl pl-10 pr-4 py-2.5 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition">
-                </div>
-
-                <!-- Department Filter -->
-                <div class="sm:col-span-5 relative">
-                    <i class="fa-solid fa-location-dot absolute left-3.5 top-1/2 -translate-y-1/2 text-brand-500 text-sm"></i>
-                    <select id="deptFilter" onchange="renderAdsList()" class="w-full bg-slate-950 border border-gray-700 text-white text-xs sm:text-sm rounded-xl pl-10 pr-4 py-2.5 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition appearance-none">
-                        <option value="">Todos los Departamentos</option>
+                <div>
+                    <select id="locationFilter" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-pink-500 transition">
+                        <option value="">Todas las ubicaciones</option>
                         <option value="San Salvador">San Salvador</option>
-                        <option value="La Libertad">La Libertad (Santa Tecla / Lourdes)</option>
                         <option value="Santa Ana">Santa Ana</option>
                         <option value="San Miguel">San Miguel</option>
-                        <option value="Sonsonate">Sonsonate</option>
-                        <option value="La Paz">La Paz</option>
+                        <option value="La Libertad">La Libertad</option>
                     </select>
+                </div>
+                <div class="flex items-center justify-end">
+                    <button id="resetFiltersBtn" class="w-full sm:w-auto px-4 py-2 bg-slate-700 hover:bg-slate-600 text-gray-200 text-xs font-medium rounded-xl transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-rotate-left text-xs"></i> Limpiar Filtros
+                    </button>
                 </div>
             </div>
         </div>
 
         <!-- Ads Grid -->
-        <section>
-            <div class="flex items-center justify-between mb-4">
-                <h2 class="text-sm sm:text-base font-bold text-gray-200 flex items-center gap-2">
-                    <i class="fa-solid fa-layer-group text-brand-500"></i>
-                    Resultados Disponibles <span id="resultsCount" class="text-xs bg-slate-800 text-gray-400 font-semibold px-2 py-0.5 rounded-full border border-gray-700">0</span>
-                </h2>
-            </div>
+        <div id="adsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <!-- Dynamic Cards injected here -->
+        </div>
 
-            <!-- Grid container -->
-            <div id="adsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <!-- Injected via JavaScript -->
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
@@ -144,189 +98,138 @@
         </div>
     </footer>
 
-    <!-- Ad Detail & Comments Modal -->
-    <div id="adModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4">
-        <div class="relative bg-slate-900 border border-gray-700 rounded-2xl max-w-4xl w-full max-h-[92vh] flex flex-col overflow-hidden shadow-2xl animate-fade-in">
+    <!-- Modal for Detailed Ad View -->
+    <div id="adModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+        <div class="bg-slate-900 border border-slate-700 w-full max-w-4xl rounded-2xl overflow-hidden shadow-2xl relative my-auto max-h-[92vh] flex flex-col">
             
-            <!-- Modal Header / Close Button -->
-            <button onclick="closeModal()" class="absolute top-4 right-4 z-30 bg-slate-800/80 hover:bg-rose-600 text-white w-9 h-9 rounded-full flex items-center justify-center transition border border-gray-600 shadow-md">
-                <i class="fa-solid fa-xmark text-lg"></i>
-            </button>
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between p-4 border-b border-slate-800 bg-slate-800/50">
+                <h3 id="modalTitle" class="text-lg font-bold text-white flex items-center gap-2"></h3>
+                <button id="closeModalBtn" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-gray-400 hover:text-white flex items-center justify-center transition">
+                    <i class="fa-solid fa-xmark text-base"></i>
+                </button>
+            </div>
 
-            <!-- Modal Body - Dynamic Grid (Left Small Gallery Slider, Right Details + Comments) -->
-            <div class="overflow-y-auto p-4 sm:p-6">
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
-                    
-                    <!-- LEFT COLUMN: Small Image Gallery Slider (4 of 12 columns) -->
-                    <div class="md:col-span-4 lg:col-span-4 flex flex-col gap-2.5">
-                        <!-- Main Carousel Viewport -->
-                        <div class="relative rounded-xl overflow-hidden bg-slate-950 border border-gray-800 aspect-[3/4] max-h-[340px] shadow-lg group">
-                            <img id="modalImg" src="" alt="Anuncio" class="w-full h-full object-cover transition-all duration-300">
-                            
-                            <!-- Badges over image -->
-                            <span id="modalVerifiedBadge" class="absolute top-2.5 left-2.5 bg-emerald-500/90 text-white text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1 backdrop-blur-md shadow">
-                                <i class="fa-solid fa-check-circle"></i> Verificado
+            <!-- Modal Content Body -->
+            <div class="p-4 sm:p-6 overflow-y-auto custom-scrollbar flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Left Column: Gallery Carousel -->
+                <div class="space-y-4">
+                    <div class="relative rounded-xl overflow-hidden bg-slate-950 aspect-[3/4] border border-slate-800 group">
+                        <img id="carouselMainImg" src="" alt="Foto Principal" class="w-full h-full object-cover cursor-zoom-in">
+                        <div class="absolute top-2 right-2 bg-black/60 backdrop-blur text-white text-[10px] px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition pointer-events-none flex items-center gap-1">
+                            <i class="fa-solid fa-expand"></i> Clic para ampliar
+                        </div>
+                        <button id="prevSlideBtn" class="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition opacity-80 hover:opacity-100">
+                            <i class="fa-solid fa-chevron-left text-sm"></i>
+                        </button>
+                        <button id="nextSlideBtn" class="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 hover:bg-black/80 text-white flex items-center justify-center transition opacity-80 hover:opacity-100">
+                            <i class="fa-solid fa-chevron-right text-sm"></i>
+                        </button>
+                        <div id="slideCounter" class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] px-2.5 py-1 rounded-full border border-white/10 font-mono"></div>
+                    </div>
+                    <!-- Thumbnails list -->
+                    <div id="thumbnailContainer" class="flex gap-2 overflow-x-auto pb-1 custom-scrollbar"></div>
+                </div>
+
+                <!-- Right Column: Details & Rating/Comments -->
+                <div class="flex flex-col justify-between space-y-4">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span id="modalAge" class="bg-pink-500/10 text-pink-400 border border-pink-500/20 text-xs px-2.5 py-1 rounded-lg font-medium"></span>
+                            <span id="modalLocation" class="text-xs text-gray-400 flex items-center gap-1">
+                                <i class="fa-solid fa-location-dot text-pink-500"></i> <span id="modalLocationText"></span>
                             </span>
-                            <span id="modalCategoryBadge" class="absolute top-2.5 right-2.5 bg-brand-600/90 text-white text-[10px] font-semibold px-2 py-0.5 rounded-full backdrop-blur-md shadow">
-                                VIP
-                            </span>
-
-                            <!-- Slider Navigation Arrows -->
-                            <button id="sliderPrevBtn" onclick="changeSlide(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-brand-600 text-white w-7 h-7 rounded-full flex items-center justify-center transition border border-gray-700 shadow-md text-xs">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                            <button id="sliderNextBtn" onclick="changeSlide(1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-slate-900/80 hover:bg-brand-600 text-white w-7 h-7 rounded-full flex items-center justify-center transition border border-gray-700 shadow-md text-xs">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-
-                            <!-- Slide Counter Indicator -->
-                            <div class="absolute bottom-2.5 right-2.5 bg-slate-950/80 text-gray-300 text-[10px] px-2 py-0.5 rounded-full border border-gray-700 backdrop-blur-md font-mono">
-                                <span id="currentSlideNum">1</span> / <span id="totalSlidesNum">1</span>
-                            </div>
                         </div>
 
-                        <!-- Thumbnails Scroll Roll -->
-                        <div id="modalThumbnails" class="flex gap-2 overflow-x-auto pb-1 scrollbar-thin">
-                            <!-- Injected thumbnail buttons dynamically -->
+                        <!-- Description -->
+                        <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+                            <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">Descripción</h4>
+                            <p id="modalDescription" class="text-xs text-gray-300 leading-relaxed"></p>
                         </div>
+
+                        <!-- Contact Button -->
+                        <a id="modalWhatsappBtn" href="#" target="_blank" rel="noopener noreferrer" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2.5 px-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-xs">
+                            <i class="fa-brands fa-whatsapp text-base"></i> Contactar por WhatsApp
+                        </a>
                     </div>
 
-                    <!-- RIGHT COLUMN: Title, Contact, Description & Comments (8 of 12 columns) -->
-                    <div class="md:col-span-8 lg:col-span-8 flex flex-col space-y-4">
-                        
-                        <!-- Header / Info -->
-                        <div>
-                            <div class="flex items-center gap-2 mb-1.5">
-                                <span id="modalLocation" class="text-xs font-medium text-brand-400 bg-brand-950/60 border border-brand-800/60 px-2.5 py-0.5 rounded-lg">
-                                    <i class="fa-solid fa-location-dot mr-1"></i> San Salvador
-                                </span>
-                                <span id="modalAge" class="text-xs font-medium text-gray-300 bg-slate-800 border border-gray-700 px-2.5 py-0.5 rounded-lg">
-                                    23 años
-                                </span>
-                            </div>
-
-                            <h2 id="modalTitle" class="text-xl sm:text-2xl font-extrabold text-white mb-2 leading-tight">
-                                Título del Anuncio
-                            </h2>
-
-                            <!-- Rating Summary -->
-                            <div class="flex items-center gap-2 mb-3">
-                                <div id="modalStarRating" class="flex text-amber-400 text-xs"></div>
-                                <span id="modalRatingText" class="text-xs font-semibold text-gray-300">4.8 (12 opiniones)</span>
-                            </div>
-
-                            <!-- Description -->
-                            <div class="bg-slate-800/60 rounded-xl p-3 border border-gray-800 mb-3">
-                                <h4 class="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-1">Descripción del Servicio</h4>
-                                <p id="modalDescription" class="text-gray-300 text-xs leading-relaxed whitespace-pre-line">
-                                    Descripción detallada del anuncio...
-                                </p>
-                            </div>
-
-                            <!-- Tags -->
-                            <div class="flex flex-wrap gap-1 mb-3" id="modalTags">
-                                <!-- Tags JS injected -->
-                            </div>
+                    <!-- Comments & Rating Section -->
+                    <div class="border-t border-slate-800 pt-4 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-xs font-bold text-white uppercase tracking-wider">Opiniones y Calificaciones</h4>
+                            <span id="modalAvgRating" class="text-xs font-semibold text-amber-400 flex items-center gap-1"></span>
                         </div>
 
-                        <!-- Quick Contact Action Bar -->
-                        <div class="p-3 bg-slate-800/90 rounded-xl border border-gray-700 space-y-1.5">
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                                <a id="modalWhatsappBtn" href="#" target="_blank" onclick="simulateContact('WhatsApp')" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs py-2 px-3 rounded-lg transition shadow-md shadow-emerald-600/20">
-                                    <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Directo
-                                </a>
-                                <a id="modalCallBtn" href="#" onclick="simulateContact('Llamada')" class="flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-500 text-white font-semibold text-xs py-2 px-3 rounded-lg transition shadow-md shadow-brand-600/20">
-                                    <i class="fa-solid fa-phone text-sm"></i> Llamar Ahora
-                                </a>
-                            </div>
-                            <p class="text-[10px] text-gray-400 text-center">
-                                <i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> Trato directo y discreto.
-                            </p>
-                        </div>
+                        <!-- Comments List -->
+                        <div id="commentsList" class="space-y-2 max-h-36 overflow-y-auto custom-scrollbar pr-1"></div>
 
-                        <!-- COMMENTS SECTION -->
-                        <div class="pt-3 border-t border-gray-800 space-y-3">
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <h3 class="text-sm font-bold text-white flex items-center gap-2">
-                                        <i class="fa-solid fa-comments text-brand-500"></i> Opiniones y Experiencias
-                                    </h3>
-                                </div>
-                                <div class="bg-slate-800 border border-gray-700 px-2.5 py-1 rounded-lg flex items-center gap-1.5">
-                                    <span id="modalAverageScore" class="text-xs font-extrabold text-white">4.9 / 5.0</span>
-                                    <i class="fa-solid fa-star text-amber-400 text-xs"></i>
+                        <!-- Add Comment Form -->
+                        <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 space-y-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <input type="text" id="commentAuthor" placeholder="Tu nombre / apodo" class="bg-slate-900 border border-slate-700 text-xs text-white px-2.5 py-1.5 rounded-lg w-1/2 focus:outline-none focus:border-pink-500">
+                                <div class="flex items-center gap-1 text-amber-400 text-xs" id="starRatingSelector">
+                                    <i class="fa-solid fa-star cursor-pointer star-option" data-rating="1"></i>
+                                    <i class="fa-solid fa-star cursor-pointer star-option" data-rating="2"></i>
+                                    <i class="fa-solid fa-star cursor-pointer star-option" data-rating="3"></i>
+                                    <i class="fa-solid fa-star cursor-pointer star-option" data-rating="4"></i>
+                                    <i class="fa-solid fa-star cursor-pointer star-option" data-rating="5"></i>
                                 </div>
                             </div>
-
-                            <!-- Comment Form -->
-                            <div class="bg-slate-800/70 p-3 rounded-xl border border-gray-700">
-                                <h4 class="text-[11px] font-bold text-gray-200 uppercase tracking-wider mb-2 flex items-center gap-1.5">
-                                    <i class="fa-solid fa-pen-to-square text-brand-400"></i> Escribir una opinión
-                                </h4>
-                                
-                                <form id="commentForm" onsubmit="submitComment(event)" class="space-y-2">
-                                    <input type="hidden" id="currentAdId">
-                                    
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                                        <div>
-                                            <label class="block text-[10px] font-medium text-gray-300 mb-1">Tu Nombre / Apodo *</label>
-                                            <input type="text" id="commentAuthor" required placeholder="Ej: Carlos M." class="w-full bg-slate-950 border border-gray-700 text-white text-xs rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-brand-500">
-                                        </div>
-                                        
-                                        <div>
-                                            <label class="block text-[10px] font-medium text-gray-300 mb-1">Calificación *</label>
-                                            <div class="flex items-center gap-1 py-0.5">
-                                                <div class="flex gap-1 text-sm text-gray-600" id="starSelector">
-                                                    <i class="fa-solid fa-star cursor-pointer hover:text-amber-400 transition" onclick="setRating(1)"></i>
-                                                    <i class="fa-solid fa-star cursor-pointer hover:text-amber-400 transition" onclick="setRating(2)"></i>
-                                                    <i class="fa-solid fa-star cursor-pointer hover:text-amber-400 transition" onclick="setRating(3)"></i>
-                                                    <i class="fa-solid fa-star cursor-pointer hover:text-amber-400 transition" onclick="setRating(4)"></i>
-                                                    <i class="fa-solid fa-star cursor-pointer hover:text-amber-400 transition" onclick="setRating(5)"></i>
-                                                </div>
-                                                <span id="ratingValueText" class="text-[11px] font-bold text-amber-400 ml-1">5 estrellas</span>
-                                            </div>
-                                            <input type="hidden" id="commentRating" value="5">
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <label class="block text-[10px] font-medium text-gray-300 mb-1">Comentario *</label>
-                                        <textarea id="commentText" required rows="2" placeholder="Cuéntanos sobre la atención, amabilidad, lugar..." class="w-full bg-slate-950 border border-gray-700 text-white text-xs rounded-lg p-2 focus:outline-none focus:border-brand-500"></textarea>
-                                    </div>
-
-                                    <button type="submit" class="bg-brand-600 hover:bg-brand-500 text-white font-semibold text-xs px-4 py-1.5 rounded-lg transition shadow-md shadow-brand-600/20">
-                                        <i class="fa-solid fa-paper-plane mr-1"></i> Publicar Opinión
-                                    </button>
-                                </form>
-                            </div>
-
-                            <!-- Comments List -->
-                            <div id="commentsList" class="space-y-2 max-h-56 overflow-y-auto pr-1 scrollbar-thin">
-                                <!-- Dynamic Comments Render -->
-                            </div>
+                            <textarea id="commentText" placeholder="Escribe tu opinión o reseña..." rows="2" class="w-full bg-slate-900 border border-slate-700 text-xs text-white p-2 rounded-lg focus:outline-none focus:border-pink-500 resize-none"></textarea>
+                            <button id="addCommentBtn" class="w-full bg-pink-600 hover:bg-pink-500 text-white text-xs font-semibold py-1.5 rounded-lg transition">Publicar Opinión</button>
                         </div>
-
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 
-    <!-- Notification Toast -->
-    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-900 border border-brand-500/50 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3">
-        <div id="toastIcon" class="w-8 h-8 rounded-full bg-brand-600/20 text-brand-400 flex items-center justify-center font-bold">
-            <i class="fa-solid fa-bell"></i>
+    <!-- Fullscreen Image Lightbox Modal -->
+    <div id="lightboxModal" class="fixed inset-0 bg-black/95 z-[70] hidden flex items-center justify-center p-4">
+        <button id="closeLightboxBtn" onclick="closeLightbox()" class="absolute top-4 right-4 text-white hover:text-pink-500 text-2xl w-10 h-10 rounded-full bg-slate-900/80 border border-slate-700 flex items-center justify-center transition z-10">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button id="prevLightboxBtn" class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-pink-500 text-xl w-12 h-12 rounded-full bg-slate-900/80 border border-slate-700 flex items-center justify-center transition z-10">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="max-w-full max-h-full flex items-center justify-center" onclick="closeLightbox()">
+            <img id="lightboxImg" src="" onclick="event.stopPropagation()" class="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl">
         </div>
-        <div>
-            <div id="toastTitle" class="text-xs font-bold">Notificación</div>
-            <div id="toastMsg" class="text-[11px] text-gray-300">Mensaje enviado</div>
-        </div>
+        <button id="nextLightboxBtn" class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-pink-500 text-xl w-12 h-12 rounded-full bg-slate-900/80 border border-slate-700 flex items-center justify-center transition z-10">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
     </div>
 
-    <!-- Application JavaScript Logic -->
+    <!-- Firebase Modular SDK -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getFirestore, collection, addDoc, onSnapshot, query, orderBy } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+        // Your real Firebase credentials
+        const firebaseConfig = {
+            apiKey: "AIzaSyD64_FMKMssixy2J6q3YyfDxXHAUyHu6DA",
+            authDomain: "chicaselsalvador-13a57.firebaseapp.com",
+            projectId: "chicaselsalvador-13a57",
+            storageBucket: "chicaselsalvador-13a57.firebasestorage.app",
+            messagingSenderId: "927139448876",
+            appId: "1:927139448876:web:8825a6ae2a0fb54f1aa989",
+            measurementId: "G-KCTM9S1075"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        window.db = db;
+        window.firestoreTools = { collection, addDoc, onSnapshot, query, orderBy };
+    </script>
+
+    <!-- Main Logic Application Script -->
     <script>
-        // Initial Mock Ads Data
-        const initialAds = [
+        // Updated Directory Data with HTML Entities for guaranteed UTF-8 rendering
+        const sampleAds = [
             {
                 id: "ad-1",
                 title: "Hola cielo, linda colombiana nueva en tu ciudad (Lomas de San Francisco)",
@@ -341,17 +244,16 @@
                     "img/ad-001/02.jpg",
                     "img/ad-001/03.jpg",
                     "img/ad-001/04.jpg",
-                    "img/ad-001/05.jpg",
-                    "img/ad-001/06.jpg"
+                    "img/ad-001/05.jpg"
                 ],
-                description: "Hola mi amor, soy valentina, una prepago de 25 años, nueva en tu ciudad. Estás ante una cariñosa y complaciente amante. Seré tu amante ideal y tu capricho hecho mujer, pues tengo mucho para darte. En nuestra cita te haré pasar un momento agradable con mis excelentes servicios. Te aseguro que a mi lado olvidarás el estrés del día a día, mientras pruebas los mejores orgasmos de tu vida. Estoy ubicada en San Salvador, donde tengo apartamento cómodo y privado. Comunícate conmigo y atrévete a conocerme. No te quedes con las ganas de probarme, WhatsApp : 77154001",
-                tags: ["Apartamento Privado", "Atención 24/7", "Trato Novios"]
+                description: "Hola mi amor, soy valentina, una prepago de 25 a&ntilde;os, nueva en tu ciudad. Est&aacute;s ante una cari&ntilde;osa y complaciente amante. Ser&eacute; tu amante ideal y tu capricho hecho mujer, pues tengo mucho para darte. En nuestra cita te har&eacute; pasar un momento agradable con mis excelentes servicios. Te aseguro que a mi lado olvidar&aacute;s el estr&eacute;s del d&iacute;a a d&iacute;a, mientras pruebas los mejores orgasmos de tu vida. Estoy ubicada en San Salvador, donde tengo apartamento c&oacute;modo y privado. Comun&iacute;cate conmigo y atr&eacute;vete a conocerme. No te quedes con las ganas de probarme, WhatsApp : 77154001",
+                tags: ["Apartamento Privado", "Atenci&oacute;n 24/7", "Trato Novios"]
             },
             {
                 id: "ad-2",
-                title: "Hermosa Colombia paisa nueva en el país por poco tiempo (Escalón)",
+                title: "Hermosa Colombia paisa nueva en el pa&iacute;s por poco tiempo (Escal&oacute;n)",
                 department: "San Salvador",
-                zone: "Colonia Escalón",
+                zone: "Colonia Escal&oacute;n",
                 age: 20,
                 phone: "+50378690884",
                 verified: true,
@@ -364,14 +266,14 @@
                     "img/ad-002/05.jpg",
                     "img/ad-002/06.jpg"
                 ],
-                description: "Hola bebés soy Loren colombiana de 20 años estaré unos días en la ciudad para que vengas y disfrutes de mis sensacionales masajes y compañía.",
+                description: "Hola beb&eacute;s soy Loren colombiana de 20 a&ntilde;os estar&eacute; unos d&iacute;as en la ciudad para que vengas y disfrutes de mis sensacionales masajes y compa&ntilde;&iacute;a.",
                 tags: ["Colombiana", "Hotel / Domicilio", "Fotos Verificadas"]
             },
             {
                 id: "ad-3",
-                title: "Soy mikaela, 21 años, sin hijos, fotos reales, escribeme (San salvador)",
+                title: "Soy mikaela, 21 a&ntilde;os, sin hijos, fotos reales, escribeme (San salvador)",
                 department: "San Salvador",
-                zone: "Colonia Escalón",
+                zone: "Colonia Escal&oacute;n",
                 age: 21,
                 phone: "+50362182151",
                 verified: true,
@@ -384,8 +286,8 @@
                     "img/ad-003/05.jpg",
                     "img/ad-003/06.jpg"
                 ],
-                description: "Soy mikaela, tengo 21 años, doy oral natural si eres aseado, trato de novios, puedes pasar por mi y me llevas al motel que mas te guste, vivo en colonia escalon. $100 una hora. Aca subo mis fotos reales, y verificadas, escribeme al +503 62182151",
-                tags: ["Santa Ana", "Promociones", "Discreción"]
+                description: "Soy mikaela, tengo 21 a&ntilde;os, doy oral natural si eres aseado, trato de novios, puedes pasar por mi y me llevas al motel que mas te guste, vivo en colonia escalon. $100 una hora. Aca subo mis fotos reales, y verificadas, escribeme al +503 62182151",
+                tags: ["Santa Ana", "Promociones", "Discreci&oacute;n"]
             },
             {
                 id: "ad-4",
@@ -402,7 +304,7 @@
                     "img/ad-004/03.jpg",
                     "img/ad-004/04.jpg"
                 ],
-                description: "Hola bb Soy una chica de 19 años, dispuesta a llevarte al límite del placer experta en sacarte todo ese estrés de la forma más ardiente, provocadora y deliciosa que puedas imaginar limpia, educada, comprensiva y complaciente, Déjate envolver por este culote que no perdona y sabe exprimirle hasta la última gota . Mis servicios son profesionales, discretos y 100% reales ya sea a domicilio o en moteles/hoteles (más información en chat) Escríbeme al 7547-4857 para conocer precios, detalles y todo lo que te puedo ofrecer No sigas imaginando, hazlo realidad. Desde orales inolvidables hasta montadas que te van a dejar temblando de placer, Te espero ansiosa lista para darte una experiencia que no vas a olvidar.",
+                description: "Hola bb Soy una chica de 19 a&ntilde;os, dispuesta a llevarte al l&iacute;mite del placer experta en sacarte todo ese estr&eacute;s de la forma m&aacute;s ardiente, provocadora y deliciosa que puedas imaginar limpia, educada, comprensiva y complaciente, D&eacute;jate envolver por este culote que no perdona y sabe exprimirle hasta la &uacute;ltima gota . Mis servicios son profesionales, discretos y 100% reales ya sea a domicilio o en moteles/hoteles (m&aacute;s informaci&oacute;n en chat) Escr&iacute;beme al 7547-4857 para conocer precios, detalles y todo lo que te puedo ofrecer No sigas imaginando, hazlo realidad. Desde orales inolvidables hasta montadas que te van a dejar temblando de placer, Te espero ansiosa lista para darte una experiencia que no vas a olvidar.",
                 tags: ["Sonsonate", "Hotel Incluido", "Independiente"]
             },
             {
@@ -423,7 +325,7 @@
                     "img/ad-005/06.jpg"
                 ],
                 description: "Soy una hermosa mujer Colombiana, seductora, sensual y muy complaciente, mi hermosa figura y mi belleza combinan con mi esencia, te espero para conocernos y tener la dicha de pasar un delicioso momento juntos.",
-                tags: ["Trío", "VIP", "Parqueo Privado"]
+                tags: ["Tr&iacute;o", "VIP", "Parqueo Privado"]
             },
             {
                 id: "ad-6",
@@ -439,119 +341,103 @@
                     "img/ad-006/02.jpg",
                     "img/ad-006/03.jpg"
                 ],
-                description: "Hola amor soy beatriz una señorita universitaria de 22 años a domicilio y disponible para atenderte de lo mejor quiero hacerte el amor como mi novio y darte el trato que te mereces. Si eres solvente y tienes ganas de un delicioso oral vaginal posiciones y un masajes contactame bebe estoy disponible",
-                tags: ["San Miguel", "Promoción", "Citas Inmediatas"]
+                description: "Hola amor soy beatriz una se&ntilde;orita universitaria de 22 a&ntilde;os a domicilio y disponible para atenderte de lo mejor quiero hacerte el amor como mi novio y darte el trato que te mereces. Si eres solvente y tienes ganas de un delicioso oral vaginal posiciones y un masajes contactame bebe estoy disponible",
+                tags: ["San Miguel", "Promoci&oacute;n", "Citas Inmediatas"]
             }
         ];
 
-        // Default Sample Comments Data
-        const initialComments = {
-            "ad-1": [
-                { id: "c1", author: "Roberto S.", rating: 5, date: "02 Nov 2026", text: "Excelente atención, muy educada y las fotos son 100% reales. Muy recomendada." },
-                { id: "c2", author: "Mario_90", rating: 5, date: "28 Oct 2026", text: "El lugar muy limpio y ordenado. Una experiencia de primera." }
-            ],
-            "ad-2": [
-                { id: "c3", author: "Cliente_SV", rating: 5, date: "04 Nov 2026", text: "Muy simpática y con un trato exquisito. La colombiana más linda." }
-            ]
-        };
-
-        // Current Gallery Slider State
+        // Global State
+        let adsData = [...sampleAds];
+        let activeAd = null;
+        let selectedRating = 5;
         let currentImageGallery = [];
         let currentSlideIndex = 0;
+        let activeUnsubscribe = null;
 
-        // Initialize Local Storage
-        function initStorage() {
-            if (!localStorage.getItem("wanuncios_comments")) {
-                localStorage.setItem("wanuncios_comments", JSON.stringify(initialComments));
+        // Render string without breaking HTML entities
+        function renderSafeText(str) {
+            if (str === null || str === undefined) return '';
+            return String(str);
+        }
+
+        // Get Local Comments Backup
+        function getLocalComments(adId) {
+            const stored = localStorage.getItem(`comments_${adId}`);
+            if (stored) {
+                try { return JSON.parse(stored); } catch(e) { return []; }
             }
+            return [];
         }
 
-        function getCommentsData() {
-            return JSON.parse(localStorage.getItem("wanuncios_comments")) || {};
-        }
-
-        function calculateAverageRating(adId) {
-            const commentsData = getCommentsData();
-            const list = commentsData[adId] || [];
-            if (list.length === 0) return { avg: 5.0, count: 0 };
-            const sum = list.reduce((acc, curr) => acc + curr.rating, 0);
-            return {
-                avg: (sum / list.length).toFixed(1),
-                count: list.length
-            };
+        // Save Local Comment
+        function saveLocalComment(adId, commentObj) {
+            const current = getLocalComments(adId);
+            current.unshift(commentObj);
+            localStorage.setItem(`comments_${adId}`, JSON.stringify(current));
         }
 
         // Render Ads Grid
-        function renderAdsList() {
-            const grid = document.getElementById("adsGrid");
+        function renderAdsList(ads) {
+            const grid = document.getElementById('adsGrid');
             if (!grid) return;
 
-            const searchVal = (document.getElementById("searchInput")?.value || "").toLowerCase();
-            const deptVal = document.getElementById("deptFilter")?.value || "";
-
-            const filtered = initialAds.filter(ad => {
-                const matchesSearch = ad.title.toLowerCase().includes(searchVal) || 
-                                      ad.description.toLowerCase().includes(searchVal) ||
-                                      ad.zone.toLowerCase().includes(searchVal);
-                const matchesDept = deptVal === "" || ad.department === deptVal;
-                return matchesSearch && matchesDept;
-            });
-
-            document.getElementById("resultsCount").innerText = filtered.length;
-
-            if (filtered.length === 0) {
+            if (ads.length === 0) {
                 grid.innerHTML = `
-                    <div class="col-span-full py-12 text-center text-gray-400 bg-slate-900/50 rounded-2xl border border-gray-800">
-                        <i class="fa-solid fa-folder-open text-3xl mb-2 text-gray-600"></i>
-                        <p class="text-sm">No se encontraron anuncios con los criterios seleccionados.</p>
+                    <div class="col-span-full text-center py-12 text-gray-400">
+                        <i class="fa-solid fa-face-frown text-3xl mb-2"></i>
+                        <p class="text-sm">No se encontraron anuncios con los filtros aplicados.</p>
                     </div>
                 `;
                 return;
             }
 
-            grid.innerHTML = filtered.map(ad => {
-                const ratingInfo = calculateAverageRating(ad.id);
-                return `
-                    <div onclick="openAdModal('${ad.id}')" class="bg-slate-900 border border-gray-800 hover:border-brand-500/50 rounded-2xl overflow-hidden shadow-lg hover:shadow-brand-500/10 transition-all cursor-pointer flex flex-col group">
-                        
-                        <!-- Image Viewport -->
-                        <div class="relative aspect-[4/3] bg-slate-950 overflow-hidden">
-                            <img src="${ad.photos[0]}" alt="${ad.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                            
-                            <div class="absolute top-2 left-2 flex flex-col gap-1">
-                                ${ad.verified ? `<span class="bg-emerald-600/90 text-white text-[10px] font-bold px-2 py-0.5 rounded-full backdrop-blur-md shadow"><i class="fa-solid fa-check"></i> Verificada</span>` : ''}
-                            </div>
-                            
-                            <span class="absolute top-2 right-2 bg-slate-900/80 text-gray-300 text-[10px] font-semibold px-2 py-0.5 rounded-full backdrop-blur-md border border-gray-700">
-                                <i class="fa-solid fa-camera mr-1"></i>${ad.photos.length}
-                            </span>
+            grid.innerHTML = ads.map(ad => {
+                const localComments = getLocalComments(ad.id);
+                const avgRating = localComments.length > 0 
+                    ? (localComments.reduce((a, b) => a + (b.rating || 5), 0) / localComments.length).toFixed(1) 
+                    : "5.0";
 
-                            <div class="absolute bottom-2 left-2 bg-slate-950/80 text-brand-400 text-[11px] font-medium px-2 py-0.5 rounded-lg border border-brand-900/50 backdrop-blur-md">
-                                <i class="fa-solid fa-location-dot mr-1"></i>${ad.department}
+                const mainPhoto = (ad.photos && ad.photos.length > 0) ? ad.photos[0] : (ad.images && ad.images[0]) || '';
+                const displayTitle = ad.title || ad.name;
+                const locationText = ad.zone ? `${ad.department} - ${ad.zone}` : (ad.department || ad.location || '');
+
+                const tagsHtml = (ad.tags || []).map(t => `<span class="bg-slate-900/90 text-gray-300 text-[10px] px-2 py-0.5 rounded border border-slate-700">${renderSafeText(t)}</span>`).join('');
+
+                return `
+                    <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700/70 shadow-lg hover:border-pink-500/50 transition duration-300 flex flex-col group cursor-pointer relative" onclick="openAdModal('${ad.id}')">
+                        <div class="relative aspect-[4/5] bg-slate-950 overflow-hidden">
+                            <img src="${mainPhoto}" onerror="this.onerror=null; this.src='https://placehold.co/600x800/1e293b/ec4899?text=Chicas+ES';" alt="${renderSafeText(displayTitle)}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            
+                            <!-- Badges -->
+                            <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                                ${ad.vip ? '<span class="bg-amber-500 text-slate-950 text-[10px] font-extrabold px-2 py-0.5 rounded-full shadow-md uppercase tracking-wider flex items-center gap-1"><i class="fa-solid fa-crown text-[9px]"></i> VIP</span>' : ''}
+                                ${ad.verified ? '<span class="bg-emerald-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-md flex items-center gap-1"><i class="fa-solid fa-circle-check text-[9px]"></i> Verificada</span>' : ''}
+                            </div>
+
+                            <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-full text-[11px] font-semibold text-amber-400 flex items-center gap-1 border border-white/10">
+                                <i class="fa-solid fa-star"></i> ${avgRating}
+                            </div>
+                            <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-white">
+                                <span class="bg-slate-900/80 backdrop-blur px-2.5 py-1 rounded-lg border border-white/10 font-medium truncate max-w-[70%]">
+                                    <i class="fa-solid fa-location-dot text-pink-500 mr-1"></i> ${renderSafeText(locationText)}
+                                </span>
+                                <span class="bg-pink-600/90 backdrop-blur px-2.5 py-1 rounded-lg font-bold">
+                                    ${ad.age} a&ntilde;os
+                                </span>
                             </div>
                         </div>
-
-                        <!-- Card Content -->
-                        <div class="p-3.5 flex-grow flex flex-col justify-between">
+                        <div class="p-4 flex flex-col justify-between flex-1">
                             <div>
-                                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
-                                    <span>${ad.zone}</span>
-                                    <span class="text-gray-300 font-semibold">${ad.age} años</span>
-                                </div>
-
-                                <h3 class="text-xs sm:text-sm font-bold text-white group-hover:text-brand-400 transition line-clamp-2 leading-snug mb-2">
-                                    ${ad.title}
-                                </h3>
+                                <h3 class="text-sm font-bold text-white group-hover:text-pink-400 transition mb-1.5 line-clamp-2">${renderSafeText(displayTitle)}</h3>
+                                <p class="text-xs text-gray-400 line-clamp-2 leading-relaxed">${renderSafeText(ad.description)}</p>
+                                <div class="flex flex-wrap gap-1 mt-2.5">${tagsHtml}</div>
                             </div>
-
-                            <div class="pt-2 border-t border-gray-800/80 flex items-center justify-between">
-                                <div class="flex items-center gap-1 text-amber-400 text-xs">
-                                    <i class="fa-solid fa-star"></i>
-                                    <span class="text-xs font-bold text-white">${ratingInfo.avg}</span>
-                                    <span class="text-[10px] text-gray-400">(${ratingInfo.count})</span>
-                                </div>
-                                <span class="text-[11px] text-emerald-400 font-semibold flex items-center gap-1">
-                                    <i class="fa-brands fa-whatsapp"></i> Contactar
+                            <div class="mt-4 pt-3 border-t border-slate-700/60 flex items-center justify-between">
+                                <span class="text-xs text-emerald-400 font-medium flex items-center gap-1">
+                                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+                                </span>
+                                <span class="text-xs text-pink-400 font-medium group-hover:translate-x-1 transition flex items-center gap-1">
+                                    Ver perfil <i class="fa-solid fa-chevron-right text-[10px]"></i>
                                 </span>
                             </div>
                         </div>
@@ -560,227 +446,303 @@
             }).join('');
         }
 
-        // Open Modal with Side-by-Side Layout
-        function openAdModal(adId) {
-            const ad = initialAds.find(item => item.id === adId);
-            if (!ad) return;
-
-            document.getElementById("currentAdId").value = ad.id;
-            document.getElementById("modalTitle").innerText = ad.title;
-            document.getElementById("modalLocation").innerHTML = `<i class="fa-solid fa-location-dot mr-1"></i> ${ad.department} (${ad.zone})`;
-            document.getElementById("modalAge").innerText = `${ad.age} años`;
-            document.getElementById("modalDescription").innerText = ad.description;
-
-            // Badges
-            document.getElementById("modalVerifiedBadge").style.display = ad.verified ? "flex" : "none";
-
-            // Contact Links
-            document.getElementById("modalWhatsappBtn").href = `https://wa.me/${ad.phone.replace(/[^0-9]/g, '')}?text=Hola,%20vi%20tu%20anuncio%20en%20Wanuncios`;
-            document.getElementById("modalCallBtn").href = `tel:${ad.phone}`;
-
-            // Tags
-            document.getElementById("modalTags").innerHTML = ad.tags.map(t => 
-                `<span class="bg-slate-800 border border-gray-700 text-gray-300 text-[10px] px-2 py-0.5 rounded-md font-medium">${t}</span>`
-            ).join('');
-
-            // Photo Gallery Setup
-            currentImageGallery = ad.photos || [ad.photos[0]];
-            currentSlideIndex = 0;
-            updateGallerySlider();
-
-            // Modal Ratings & Comments
-            renderModalComments(ad.id);
-
-            // Show Modal
-            document.getElementById("adModal").classList.remove("hidden");
-        }
-
-        // Gallery Slider Logic
-        function updateGallerySlider() {
-            const imgElem = document.getElementById("modalImg");
-            imgElem.src = currentImageGallery[currentSlideIndex];
-
-            document.getElementById("currentSlideNum").innerText = currentSlideIndex + 1;
-            document.getElementById("totalSlidesNum").innerText = currentImageGallery.length;
-
-            const prevBtn = document.getElementById("sliderPrevBtn");
-            const nextBtn = document.getElementById("sliderNextBtn");
-
-            if (currentImageGallery.length <= 1) {
-                prevBtn.classList.add("hidden");
-                nextBtn.classList.add("hidden");
-            } else {
-                prevBtn.classList.remove("hidden");
-                nextBtn.classList.remove("hidden");
+        // Carousel Controller
+        function updateCarousel() {
+            const mainImg = document.getElementById('carouselMainImg');
+            const counter = document.getElementById('slideCounter');
+            if (mainImg && currentImageGallery.length > 0) {
+                mainImg.src = currentImageGallery[currentSlideIndex];
+                mainImg.setAttribute('onclick', 'openLightbox()');
+                mainImg.onerror = function() {
+                    this.onerror = null;
+                    this.src = 'https://placehold.co/600x800/1e293b/ec4899?text=Imagen+no+disponible';
+                };
+                if (counter) {
+                    counter.innerText = `${currentSlideIndex + 1} / ${currentImageGallery.length}`;
+                }
             }
 
-            // Render Thumbnails Roll
-            const thumbContainer = document.getElementById("modalThumbnails");
-            if (currentImageGallery.length > 1) {
-                thumbContainer.classList.remove("hidden");
-                thumbContainer.innerHTML = currentImageGallery.map((imgUrl, idx) => `
-                    <button onclick="goToSlide(${idx})" class="relative flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden border-2 transition-all ${idx === currentSlideIndex ? 'border-brand-500 scale-95 shadow-md' : 'border-gray-700 opacity-60 hover:opacity-100'}">
-                        <img src="${imgUrl}" class="w-full h-full object-cover">
+            // Update Thumbnails
+            const thumbContainer = document.getElementById('thumbnailContainer');
+            if (thumbContainer) {
+                thumbContainer.innerHTML = currentImageGallery.map((img, idx) => `
+                    <button onclick="setSlide(${idx})" class="w-14 h-14 rounded-lg overflow-hidden border-2 flex-shrink-0 ${idx === currentSlideIndex ? 'border-pink-500 scale-95' : 'border-slate-800 opacity-60 hover:opacity-100'} transition">
+                        <img src="${img}" onerror="this.onerror=null; this.src='https://placehold.co/150x150/1e293b/ec4899?text=Foto';" class="w-full h-full object-cover">
                     </button>
                 `).join('');
-            } else {
-                thumbContainer.classList.add("hidden");
             }
         }
 
-        function changeSlide(direction) {
-            currentSlideIndex += direction;
-            if (currentSlideIndex < 0) {
-                currentSlideIndex = currentImageGallery.length - 1;
-            } else if (currentSlideIndex >= currentImageGallery.length) {
-                currentSlideIndex = 0;
-            }
-            updateGallerySlider();
-        }
+        window.openLightbox = function() {
+            const lightboxModal = document.getElementById('lightboxModal');
+            const lightboxImg = document.getElementById('lightboxImg');
+            if (!lightboxModal || !lightboxImg || currentImageGallery.length === 0) return;
+            lightboxImg.src = currentImageGallery[currentSlideIndex];
+            lightboxModal.classList.remove('hidden');
+        };
 
-        function goToSlide(index) {
+        window.closeLightbox = function() {
+            const lightboxModal = document.getElementById('lightboxModal');
+            if (lightboxModal) lightboxModal.classList.add('hidden');
+        };
+
+        function setSlide(index) {
             currentSlideIndex = index;
-            updateGallerySlider();
+            updateCarousel();
         }
 
-        // Render Modal Comments
-        function renderModalComments(adId) {
-            const commentsData = getCommentsData();
-            const list = commentsData[adId] || [];
-            const ratingInfo = calculateAverageRating(adId);
+        // Open Modal
+        window.openAdModal = function(adId) {
+            activeAd = adsData.find(a => a.id === adId);
+            if (!activeAd) return;
 
-            document.getElementById("modalAverageScore").innerText = `${ratingInfo.avg} / 5.0`;
-            document.getElementById("modalRatingText").innerText = `${ratingInfo.avg} (${ratingInfo.count} opiniones)`;
+            const displayTitle = activeAd.title || activeAd.name;
+            const locationText = activeAd.zone ? `${activeAd.department} (${activeAd.zone})` : (activeAd.department || activeAd.location || '');
 
-            // Render Stars Header
-            let starsHtml = '';
-            for (let i = 1; i <= 5; i++) {
-                starsHtml += `<i class="fa-solid fa-star ${i <= Math.round(ratingInfo.avg) ? 'text-amber-400' : 'text-gray-600'}"></i>`;
-            }
-            document.getElementById("modalStarRating").innerHTML = starsHtml;
+            document.getElementById('modalTitle').innerHTML = renderSafeText(displayTitle);
+            document.getElementById('modalAge').innerText = `${activeAd.age} Años`;
+            document.getElementById('modalLocationText').innerHTML = renderSafeText(locationText);
+            document.getElementById('modalDescription').innerHTML = renderSafeText(activeAd.description);
+            document.getElementById('modalWhatsappBtn').href = `https://wa.me/${activeAd.phone.replace(/[^0-9]/g, '')}`;
 
-            // Render Comment Items
-            const commentsContainer = document.getElementById("commentsList");
-            if (list.length === 0) {
-                commentsContainer.innerHTML = `
-                    <p class="text-xs text-gray-400 text-center py-4 bg-slate-950/40 rounded-xl border border-gray-800">
-                        Sé el primero en dejar una opinión sobre este anuncio.
-                    </p>
-                `;
+            currentImageGallery = activeAd.photos || activeAd.images || [];
+            currentSlideIndex = 0;
+            updateCarousel();
+
+            // Load & Listen Comments (Firebase Firestore + Local Fallback)
+            loadComments(activeAd.id);
+
+            const modal = document.getElementById('adModal');
+            if (modal) modal.classList.remove('hidden');
+        };
+
+        // Render Comments List
+        function renderCommentsList(comments) {
+            const commentsList = document.getElementById('commentsList');
+            const avgRatingEl = document.getElementById('modalAvgRating');
+            if (!commentsList) return;
+
+            if (comments.length === 0) {
+                commentsList.innerHTML = `<p class="text-gray-400 text-xs italic text-center py-4">S&eacute; el primero en dejar una opini&oacute;n.</p>`;
+                if (avgRatingEl) avgRatingEl.innerHTML = `<i class="fa-solid fa-star"></i> 5.0 (0)`;
                 return;
             }
 
-            commentsContainer.innerHTML = list.map(c => {
-                let itemStars = '';
-                for (let i = 1; i <= 5; i++) {
-                    itemStars += `<i class="fa-solid fa-star ${i <= c.rating ? 'text-amber-400' : 'text-gray-700'}"></i>`;
-                }
+            const avg = (comments.reduce((a, b) => a + (b.rating || 5), 0) / comments.length).toFixed(1);
+            if (avgRatingEl) avgRatingEl.innerHTML = `<i class="fa-solid fa-star"></i> ${avg} (${comments.length})`;
 
-                return `
-                    <div class="bg-slate-950/70 p-2.5 rounded-xl border border-gray-800 space-y-1">
-                        <div class="flex items-center justify-between">
-                            <span class="text-xs font-bold text-gray-200 flex items-center gap-1.5">
-                                <i class="fa-solid fa-user-circle text-gray-500"></i> ${c.author}
-                            </span>
-                            <span class="text-[10px] text-gray-500">${c.date}</span>
-                        </div>
-                        <div class="flex text-[10px] gap-0.5">${itemStars}</div>
-                        <p class="text-xs text-gray-300 leading-normal">${c.text}</p>
+            commentsList.innerHTML = comments.map(c => `
+                <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 text-xs space-y-1">
+                    <div class="flex justify-between items-center">
+                        <span class="font-semibold text-gray-200">${renderSafeText(c.author)}</span>
+                        <span class="text-[10px] text-gray-500">${c.date || ''}</span>
                     </div>
-                `;
-            }).join('');
+                    <div class="flex text-amber-400 text-[10px]">
+                        ${'<i class="fa-solid fa-star"></i>'.repeat(c.rating || 5)}
+                    </div>
+                    <p class="text-gray-300 text-xs">${renderSafeText(c.text)}</p>
+                </div>
+            `).join('');
         }
 
-        // Handle Star Rating Selection in Form
-        function setRating(val) {
-            document.getElementById("commentRating").value = val;
-            document.getElementById("ratingValueText").innerText = `${val} estrella${val > 1 ? 's' : ''}`;
+        // Fetch comments with Firestore listener or fallback
+        function loadComments(adId) {
+            if (activeUnsubscribe) {
+                activeUnsubscribe();
+                activeUnsubscribe = null;
+            }
 
-            const stars = document.querySelectorAll("#starSelector i");
-            stars.forEach((star, index) => {
-                if (index < val) {
-                    star.classList.remove("text-gray-600");
-                    star.classList.add("text-amber-400");
-                } else {
-                    star.classList.remove("text-amber-400");
-                    star.classList.add("text-gray-600");
+            const local = getLocalComments(adId);
+            renderCommentsList(local);
+
+            // If Firebase loaded successfully
+            if (window.db && window.firestoreTools) {
+                try {
+                    const { collection, onSnapshot, query, orderBy } = window.firestoreTools;
+                    const colRef = collection(window.db, `comments_${adId}`);
+                    const q = query(colRef, orderBy("timestamp", "desc"));
+
+                    activeUnsubscribe = onSnapshot(q, (snapshot) => {
+                        const firebaseComments = [];
+                        snapshot.forEach(doc => {
+                            firebaseComments.push(doc.data());
+                        });
+
+                        if (firebaseComments.length > 0) {
+                            renderCommentsList(firebaseComments);
+                        }
+                    }, (err) => {
+                        console.log("Firestore offline/reading from local cache.");
+                    });
+                } catch(e) {
+                    console.log("Firebase listener fallback to local storage.");
+                }
+            }
+        }
+
+        // Initialize App & Event Listeners
+        document.addEventListener('DOMContentLoaded', () => {
+            renderAdsList(adsData);
+
+            // Filter logic
+            const searchInput = document.getElementById('searchInput');
+            const locationFilter = document.getElementById('locationFilter');
+            const resetBtn = document.getElementById('resetFiltersBtn');
+
+            function applyFilters() {
+                const query = (searchInput?.value || '').toLowerCase();
+                const loc = locationFilter?.value || '';
+
+                const filtered = adsData.filter(ad => {
+                    const titleText = (ad.title || ad.name || '').toLowerCase();
+                    const descText = (ad.description || '').toLowerCase();
+                    const adDepartment = ad.department || ad.location || '';
+                    
+                    const matchesSearch = titleText.includes(query) || descText.includes(query);
+                    const matchesLoc = !loc || adDepartment === loc;
+                    return matchesSearch && matchesLoc;
+                });
+                renderAdsList(filtered);
+            }
+
+            if (searchInput) searchInput.addEventListener('input', applyFilters);
+            if (locationFilter) locationFilter.addEventListener('change', applyFilters);
+            if (resetBtn) {
+                resetBtn.addEventListener('click', () => {
+                    if (searchInput) searchInput.value = '';
+                    if (locationFilter) locationFilter.value = '';
+                    renderAdsList(adsData);
+                });
+            }
+
+            // Modal Controls
+            const closeModalBtn = document.getElementById('closeModalBtn');
+            const adModal = document.getElementById('adModal');
+            if (closeModalBtn && adModal) {
+                closeModalBtn.addEventListener('click', () => adModal.classList.add('hidden'));
+                adModal.addEventListener('click', (e) => {
+                    if (e.target === adModal) adModal.classList.add('hidden');
+                });
+            }
+
+            // Carousel Controls
+            const prevBtn = document.getElementById('prevSlideBtn');
+            const nextBtn = document.getElementById('nextSlideBtn');
+            const mainImg = document.getElementById('carouselMainImg');
+
+            // Lightbox Elements
+            const lightboxModal = document.getElementById('lightboxModal');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const prevLightboxBtn = document.getElementById('prevLightboxBtn');
+            const nextLightboxBtn = document.getElementById('nextLightboxBtn');
+
+            if (mainImg) {
+                mainImg.addEventListener('click', window.openLightbox);
+            }
+
+            if (prevLightboxBtn) {
+                prevLightboxBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    currentSlideIndex = (currentSlideIndex - 1 + currentImageGallery.length) % currentImageGallery.length;
+                    updateCarousel();
+                    if (lightboxImg) lightboxImg.src = currentImageGallery[currentSlideIndex];
+                });
+            }
+
+            if (nextLightboxBtn) {
+                nextLightboxBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    currentSlideIndex = (currentSlideIndex + 1) % currentImageGallery.length;
+                    updateCarousel();
+                    if (lightboxImg) lightboxImg.src = currentImageGallery[currentSlideIndex];
+                });
+            }
+
+            // Keyboard navigation (Esc, Left arrow, Right arrow)
+            document.addEventListener('keydown', (e) => {
+                if (lightboxModal && !lightboxModal.classList.contains('hidden')) {
+                    if (e.key === 'Escape') window.closeLightbox();
+                    if (e.key === 'ArrowLeft' && prevLightboxBtn) prevLightboxBtn.click();
+                    if (e.key === 'ArrowRight' && nextLightboxBtn) nextLightboxBtn.click();
                 }
             });
-        }
 
-        // Submit New Comment
-        function submitComment(e) {
-            e.preventDefault();
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    currentSlideIndex = (currentSlideIndex - 1 + currentImageGallery.length) % currentImageGallery.length;
+                    updateCarousel();
+                });
+            }
 
-            const adId = document.getElementById("currentAdId").value;
-            const author = document.getElementById("commentAuthor").value.trim();
-            const rating = parseInt(document.getElementById("commentRating").value);
-            const text = document.getElementById("commentText").value.trim();
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    currentSlideIndex = (currentSlideIndex + 1) % currentImageGallery.length;
+                    updateCarousel();
+                });
+            }
 
-            if (!author || !text) return;
+            // Star Rating selector
+            const starOptions = document.querySelectorAll('.star-option');
+            starOptions.forEach(star => {
+                star.addEventListener('click', (e) => {
+                    selectedRating = parseInt(e.target.getAttribute('data-rating') || '5');
+                    starOptions.forEach((s, idx) => {
+                        if (idx < selectedRating) {
+                            s.classList.remove('text-gray-600');
+                            s.classList.add('text-amber-400');
+                        } else {
+                            s.classList.remove('text-amber-400');
+                            s.classList.add('text-gray-600');
+                        }
+                    });
+                });
+            });
 
-            const commentsData = getCommentsData();
-            if (!commentsData[adId]) commentsData[adId] = [];
+            // Submit comment handler
+            const addCommentBtn = document.getElementById('addCommentBtn');
+            if (addCommentBtn) {
+                addCommentBtn.addEventListener('click', async () => {
+                    if (!activeAd) return;
 
-            const newComment = {
-                id: 'c_' + Date.now(),
-                author: author,
-                rating: rating,
-                date: "Hoy",
-                text: text
-            };
+                    const authorInput = document.getElementById('commentAuthor');
+                    const textInput = document.getElementById('commentText');
 
-            commentsData[adId].unshift(newComment);
-            localStorage.setItem("wanuncios_comments", JSON.stringify(commentsData));
+                    const author = authorInput?.value.trim() || 'Anónimo';
+                    const text = textInput?.value.trim();
 
-            // Reset Form & Re-render
-            document.getElementById("commentText").value = "";
-            document.getElementById("commentAuthor").value = "";
-            setRating(5);
+                    if (!text) {
+                        alert('Por favor escribe tu opinión antes de enviar.');
+                        return;
+                    }
 
-            renderModalComments(adId);
-            renderAdsList(); // Update overall count on main grid
-            showToast("Opinión guardada", "Tu comentario ha sido publicado correctamente.");
-        }
+                    const newComment = {
+                        author,
+                        text,
+                        rating: selectedRating,
+                        date: new Date().toLocaleDateString('es-SV', { day: '2-digit', month: 'short', year: 'numeric' }),
+                        timestamp: Date.now()
+                    };
 
-        // Close Modal
-        function closeModal() {
-            document.getElementById("adModal").classList.add("hidden");
-        }
+                    // Save local backup immediately
+                    saveLocalComment(activeAd.id, newComment);
 
-        // Toast Notification System
-        function showToast(title, message) {
-            const toast = document.getElementById("toast");
-            document.getElementById("toastTitle").innerText = title;
-            document.getElementById("toastMsg").innerText = message;
+                    // Push to Firestore if available
+                    if (window.db && window.firestoreTools) {
+                        try {
+                            const { collection, addDoc } = window.firestoreTools;
+                            await addDoc(collection(window.db, `comments_${activeAd.id}`), newComment);
+                        } catch(e) {
+                            console.log("Saved to local storage.");
+                        }
+                    }
 
-            toast.classList.remove("translate-y-20", "opacity-0");
-            setTimeout(() => {
-                toast.classList.add("translate-y-20", "opacity-0");
-            }, 3000);
-        }
-
-        function simulateContact(type) {
-            showToast("Redirigiendo", `Abriendo enlace de ${type}...`);
-        }
-
-        function showPublishAlert() {
-            showToast("Portal de Anunciantes", "Para publicar un nuevo anuncio comunícate con soporte vía WhatsApp.");
-        }
-
-        // Inicialización al cargar el DOM de manera segura
-        document.addEventListener("DOMContentLoaded", () => {
-            initStorage();
-            renderAdsList();
+                    // Reset form
+                    if (textInput) textInput.value = '';
+                    loadComments(activeAd.id);
+                    renderAdsList(adsData);
+                });
+            }
         });
-
-        // Garantizar que renderAdsList corra incluso si DOMContentLoaded ya ocurrió
-        if (document.readyState === "complete" || document.readyState === "interactive") {
-            setTimeout(() => {
-                initStorage();
-                renderAdsList();
-            }, 100);
-        }
     </script>
 </body>
 </html>
