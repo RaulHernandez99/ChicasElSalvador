@@ -136,7 +136,10 @@
                 <div class="flex flex-col justify-between space-y-4">
                     <div class="space-y-4">
                         <div class="flex items-center justify-between">
-                            <span id="modalAge" class="bg-pink-500/10 text-pink-400 border border-pink-500/20 text-xs px-2.5 py-1 rounded-lg font-medium"></span>
+                            <div class="flex items-center gap-2">
+                                <span id="modalAge" class="bg-pink-500/10 text-pink-400 border border-pink-500/20 text-xs px-2.5 py-1 rounded-lg font-medium"></span>
+                                <span id="modalPrice" class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs px-2.5 py-1 rounded-lg font-bold"></span>
+                            </div>
                             <span id="modalLocation" class="text-xs text-gray-400 flex items-center gap-1">
                                 <i class="fa-solid fa-location-dot text-pink-500"></i> <span id="modalLocationText"></span>
                             </span>
@@ -236,6 +239,7 @@
                 department: "San Salvador",
                 zone: "Santa Tecla / Merliot",
                 age: 25,
+                price: "$60 / hora",
                 phone: "+50377154001",
                 verified: true,
                 vip: true,
@@ -244,7 +248,8 @@
                     "img/ad-001/02.jpg",
                     "img/ad-001/03.jpg",
                     "img/ad-001/04.jpg",
-                    "img/ad-001/05.jpg"
+                    "img/ad-001/05.jpg",
+                    "img/ad-001/06.jpg"
                 ],
                 description: "Hola mi amor, soy valentina, una prepago de 25 a&ntilde;os, nueva en tu ciudad. Est&aacute;s ante una cari&ntilde;osa y complaciente amante. Ser&eacute; tu amante ideal y tu capricho hecho mujer, pues tengo mucho para darte. En nuestra cita te har&eacute; pasar un momento agradable con mis excelentes servicios. Te aseguro que a mi lado olvidar&aacute;s el estr&eacute;s del d&iacute;a a d&iacute;a, mientras pruebas los mejores orgasmos de tu vida. Estoy ubicada en San Salvador, donde tengo apartamento c&oacute;modo y privado. Comun&iacute;cate conmigo y atr&eacute;vete a conocerme. No te quedes con las ganas de probarme, WhatsApp : 77154001",
                 tags: ["Apartamento Privado", "Atenci&oacute;n 24/7", "Trato Novios"]
@@ -255,6 +260,7 @@
                 department: "San Salvador",
                 zone: "Colonia Escal&oacute;n",
                 age: 20,
+                price: "$70 / hora",
                 phone: "+50378690884",
                 verified: true,
                 vip: true,
@@ -275,6 +281,7 @@
                 department: "San Salvador",
                 zone: "Colonia Escal&oacute;n",
                 age: 21,
+                price: "$100 / hora",
                 phone: "+50362182151",
                 verified: true,
                 vip: false,
@@ -287,7 +294,7 @@
                     "img/ad-003/06.jpg"
                 ],
                 description: "Soy mikaela, tengo 21 a&ntilde;os, doy oral natural si eres aseado, trato de novios, puedes pasar por mi y me llevas al motel que mas te guste, vivo en colonia escalon. $100 una hora. Aca subo mis fotos reales, y verificadas, escribeme al +503 62182151",
-                tags: ["Santa Ana", "Promociones", "Discreci&oacute;n"]
+                tags: ["Promociones", "Discreci&oacute;n"]
             },
             {
                 id: "ad-4",
@@ -295,6 +302,7 @@
                 department: "San Salvador",
                 zone: "San Salvador",
                 age: 19,
+                price: "$50 / hora",
                 phone: "+50375474857",
                 verified: true,
                 vip: false,
@@ -305,7 +313,7 @@
                     "img/ad-004/04.jpg"
                 ],
                 description: "Hola bb Soy una chica de 19 a&ntilde;os, dispuesta a llevarte al l&iacute;mite del placer experta en sacarte todo ese estr&eacute;s de la forma m&aacute;s ardiente, provocadora y deliciosa que puedas imaginar limpia, educada, comprensiva y complaciente, D&eacute;jate envolver por este culote que no perdona y sabe exprimirle hasta la &uacute;ltima gota . Mis servicios son profesionales, discretos y 100% reales ya sea a domicilio o en moteles/hoteles (m&aacute;s informaci&oacute;n en chat) Escr&iacute;beme al 7547-4857 para conocer precios, detalles y todo lo que te puedo ofrecer No sigas imaginando, hazlo realidad. Desde orales inolvidables hasta montadas que te van a dejar temblando de placer, Te espero ansiosa lista para darte una experiencia que no vas a olvidar.",
-                tags: ["Sonsonate", "Hotel Incluido", "Independiente"]
+                tags: ["Hotel Incluido", "Independiente"]
             },
             {
                 id: "ad-5",
@@ -313,6 +321,7 @@
                 department: "San Salvador",
                 zone: "San Salvador Central",
                 age: 21,
+                price: "$80 / hora",
                 phone: "+57 3508003709",
                 verified: true,
                 vip: true,
@@ -333,6 +342,7 @@
                 department: "San Salvador",
                 zone: "San Salvador",
                 age: 22,
+                price: "$60 / hora",
                 phone: "+50368906808",
                 verified: true,
                 vip: false,
@@ -342,7 +352,7 @@
                     "img/ad-006/03.jpg"
                 ],
                 description: "Hola amor soy beatriz una se&ntilde;orita universitaria de 22 a&ntilde;os a domicilio y disponible para atenderte de lo mejor quiero hacerte el amor como mi novio y darte el trato que te mereces. Si eres solvente y tienes ganas de un delicioso oral vaginal posiciones y un masajes contactame bebe estoy disponible",
-                tags: ["San Miguel", "Promoci&oacute;n", "Citas Inmediatas"]
+                tags: ["Promoci&oacute;n", "Citas Inmediatas"]
             }
         ];
 
@@ -400,6 +410,7 @@
                 const mainPhoto = (ad.photos && ad.photos.length > 0) ? ad.photos[0] : (ad.images && ad.images[0]) || '';
                 const displayTitle = ad.title || ad.name;
                 const locationText = ad.zone ? `${ad.department} - ${ad.zone}` : (ad.department || ad.location || '');
+                const displayPrice = ad.price || "$60 / hora";
 
                 const tagsHtml = (ad.tags || []).map(t => `<span class="bg-slate-900/90 text-gray-300 text-[10px] px-2 py-0.5 rounded border border-slate-700">${renderSafeText(t)}</span>`).join('');
 
@@ -418,10 +429,10 @@
                                 <i class="fa-solid fa-star"></i> ${avgRating}
                             </div>
                             <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-white">
-                                <span class="bg-slate-900/80 backdrop-blur px-2.5 py-1 rounded-lg border border-white/10 font-medium truncate max-w-[70%]">
+                                <span class="bg-slate-900/80 backdrop-blur px-2.5 py-1 rounded-lg border border-white/10 font-medium truncate max-w-[65%]">
                                     <i class="fa-solid fa-location-dot text-pink-500 mr-1"></i> ${renderSafeText(locationText)}
                                 </span>
-                                <span class="bg-pink-600/90 backdrop-blur px-2.5 py-1 rounded-lg font-bold">
+                                <span class="bg-pink-600/90 backdrop-blur px-2 py-1 rounded-lg font-bold text-[11px]">
                                     ${ad.age} a&ntilde;os
                                 </span>
                             </div>
@@ -433,8 +444,8 @@
                                 <div class="flex flex-wrap gap-1 mt-2.5">${tagsHtml}</div>
                             </div>
                             <div class="mt-4 pt-3 border-t border-slate-700/60 flex items-center justify-between">
-                                <span class="text-xs text-emerald-400 font-medium flex items-center gap-1">
-                                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+                                <span class="text-xs text-emerald-400 font-bold flex items-center gap-1">
+                                    <i class="fa-solid fa-tag text-xs"></i> ${renderSafeText(displayPrice)}
                                 </span>
                                 <span class="text-xs text-pink-400 font-medium group-hover:translate-x-1 transition flex items-center gap-1">
                                     Ver perfil <i class="fa-solid fa-chevron-right text-[10px]"></i>
@@ -498,9 +509,14 @@
 
             const displayTitle = activeAd.title || activeAd.name;
             const locationText = activeAd.zone ? `${activeAd.department} (${activeAd.zone})` : (activeAd.department || activeAd.location || '');
+            const displayPrice = activeAd.price || "$60 / hora";
 
             document.getElementById('modalTitle').innerHTML = renderSafeText(displayTitle);
             document.getElementById('modalAge').innerText = `${activeAd.age} Años`;
+            
+            const modalPrice = document.getElementById('modalPrice');
+            if (modalPrice) modalPrice.innerText = displayPrice;
+
             document.getElementById('modalLocationText').innerHTML = renderSafeText(locationText);
             document.getElementById('modalDescription').innerHTML = renderSafeText(activeAd.description);
             document.getElementById('modalWhatsappBtn').href = `https://wa.me/${activeAd.phone.replace(/[^0-9]/g, '')}`;
