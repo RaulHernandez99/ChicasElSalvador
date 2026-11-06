@@ -22,6 +22,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics 4 (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KCTM9S1075"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-KCTM9S1075');
+    </script>
+
     <style>
         body { font-family: 'Inter', sans-serif; }
         .custom-scrollbar::-webkit-scrollbar { width: 6px; }
@@ -248,8 +259,7 @@
                     "img/ad-001/02.jpg",
                     "img/ad-001/03.jpg",
                     "img/ad-001/04.jpg",
-                    "img/ad-001/05.jpg",
-                    "img/ad-001/06.jpg"
+                    "img/ad-001/05.jpg"
                 ],
                 description: "Hola mi amor, soy valentina, una prepago de 25 a&ntilde;os, nueva en tu ciudad. Est&aacute;s ante una cari&ntilde;osa y complaciente amante. Ser&eacute; tu amante ideal y tu capricho hecho mujer, pues tengo mucho para darte. En nuestra cita te har&eacute; pasar un momento agradable con mis excelentes servicios. Te aseguro que a mi lado olvidar&aacute;s el estr&eacute;s del d&iacute;a a d&iacute;a, mientras pruebas los mejores orgasmos de tu vida. Estoy ubicada en San Salvador, donde tengo apartamento c&oacute;modo y privado. Comun&iacute;cate conmigo y atr&eacute;vete a conocerme. No te quedes con las ganas de probarme, WhatsApp : 77154001",
                 tags: ["Apartamento Privado", "Atenci&oacute;n 24/7", "Trato Novios"]
@@ -352,7 +362,7 @@
                     "img/ad-006/03.jpg"
                 ],
                 description: "Hola amor soy beatriz una se&ntilde;orita universitaria de 22 a&ntilde;os a domicilio y disponible para atenderte de lo mejor quiero hacerte el amor como mi novio y darte el trato que te mereces. Si eres solvente y tienes ganas de un delicioso oral vaginal posiciones y un masajes contactame bebe estoy disponible",
-                tags: ["Promoci&oacute;n", "Citas Inmediatas"]
+                tags: ["San Miguel", "Promoci&oacute;n", "Citas Inmediatas"]
             }
         ];
 
@@ -507,6 +517,15 @@
             activeAd = adsData.find(a => a.id === adId);
             if (!activeAd) return;
 
+            // Track view in Google Analytics
+            if (typeof gtag === 'function') {
+                gtag('event', 'view_item', {
+                    item_id: activeAd.id,
+                    item_name: activeAd.title || activeAd.name,
+                    price: activeAd.price
+                });
+            }
+
             const displayTitle = activeAd.title || activeAd.name;
             const locationText = activeAd.zone ? `${activeAd.department} (${activeAd.zone})` : (activeAd.department || activeAd.location || '');
             const displayPrice = activeAd.price || "$60 / hora";
@@ -519,7 +538,18 @@
 
             document.getElementById('modalLocationText').innerHTML = renderSafeText(locationText);
             document.getElementById('modalDescription').innerHTML = renderSafeText(activeAd.description);
-            document.getElementById('modalWhatsappBtn').href = `https://wa.me/${activeAd.phone.replace(/[^0-9]/g, '')}`;
+            
+            const whatsappBtn = document.getElementById('modalWhatsappBtn');
+            const waPhone = activeAd.phone.replace(/[^0-9]/g, '');
+            whatsappBtn.href = `https://wa.me/${waPhone}`;
+            whatsappBtn.onclick = function() {
+                if (typeof gtag === 'function') {
+                    gtag('event', 'contact_whatsapp', {
+                        item_id: activeAd.id,
+                        item_name: activeAd.title || activeAd.name
+                    });
+                }
+            };
 
             currentImageGallery = activeAd.photos || activeAd.images || [];
             currentSlideIndex = 0;
@@ -584,11 +614,13 @@
                             firebaseComments.push(doc.data());
                         });
 
+                        console.log(`🔥 Conexión Firestore activa: ${firebaseComments.length} comentarios cargados en tiempo real.`);
+
                         if (firebaseComments.length > 0) {
                             renderCommentsList(firebaseComments);
                         }
                     }, (err) => {
-                        console.log("Firestore offline/reading from local cache.");
+                        console.log("Firestore offline/reading from local cache:", err);
                     });
                 } catch(e) {
                     console.log("Firebase listener fallback to local storage.");
@@ -741,6 +773,14 @@
 
                     // Save local backup immediately
                     saveLocalComment(activeAd.id, newComment);
+
+                    // Track comment in Google Analytics
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'post_review', {
+                            item_id: activeAd.id,
+                            rating: selectedRating
+                        });
+                    }
 
                     // Push to Firestore if available
                     if (window.db && window.firestoreTools) {
